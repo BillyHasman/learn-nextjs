@@ -1,10 +1,23 @@
 import Menu from '../menu'
 import { withAuth } from '../with-auth'
 
-function Header() {
+/**
+ *
+ * @param {Number} param.number
+ * @param {Function} param.handleSetNumber
+ * @returns
+ */
+
+function Header({ number, handleSetNumber }) {
   return (
     <div>
-      <Menu />
+      <div>
+        <button onClick={handleSetNumber}>Button Number</button>
+        <p>Component Header {number}</p>
+      </div>
+      <div>
+        <Menu />
+      </div>
     </div>
   )
 }
