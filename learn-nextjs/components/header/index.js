@@ -1,5 +1,6 @@
 import Menu from '../menu'
 import { withAuth } from '../with-auth'
+import styles from './styles.module.css'
 
 /**
  *
@@ -10,7 +11,7 @@ import { withAuth } from '../with-auth'
 
 function Header({ number, handleSetNumber }) {
   return (
-    <div>
+    <div className={styles.header}>
       <div>
         <button onClick={handleSetNumber}>Button Number</button>
         <p>Component Header {number}</p>
