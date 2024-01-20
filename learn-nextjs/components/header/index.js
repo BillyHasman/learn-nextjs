@@ -16,9 +16,9 @@ function Header({ number, handleSetNumber }) {
         <button onClick={handleSetNumber}>Button Number</button>
         <p>Component Header {number}</p>
       </div>
-      <div>
+      {/* <div>
         <Menu />
-      </div>
+      </div> */}
     </div>
   )
 }
