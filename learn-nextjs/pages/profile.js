@@ -3,7 +3,10 @@ import Layout from '@/layout'
 export default function Profile() {
   return (
     <>
-      <Layout>
+      <Layout
+        metaTitle='Profile'
+        metaDescription='semua informasi ini adalah seputar profile user'
+      >
         <p>Profile</p>
       </Layout>
     </>
