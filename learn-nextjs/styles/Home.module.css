@@ -39,6 +39,10 @@
   font-family: var(--font-mono);
 }
 
+.container_blue {
+  background-color: brown;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));

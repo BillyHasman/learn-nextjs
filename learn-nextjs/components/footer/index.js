@@ -1,17 +1,19 @@
 import { useState } from 'react'
-import styles from './styles.module.css'
+import styles from './footer.module.css'
 
 export default function Footer() {
   const [number, setNumber] = useState(0)
   return (
-    <div className={styles.header}>
+    <div className={styles.footer}>
       <button
-        className='text-3xl font-bold underline'
+        className='w-full text-3xl font-bold underline'
         onClick={() => setNumber((prevState) => prevState + 1)}
       >
         Button Number
       </button>
-      <p>Component Footer {number} </p>
+      <div className='w-full text-center'>
+        <p>Component Footer {number} </p>
+      </div>
     </div>
   )
 }

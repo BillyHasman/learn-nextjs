@@ -3,7 +3,9 @@ import Layout from '@/layout'
 export default function UserDetail() {
   return (
     <Layout>
-      <p>User Detail</p>
+      <div className='my-10 text-center justify-items-center'>
+        <p>Halaman User Detail</p>
+      </div>
     </Layout>
   )
 }

@@ -1,7 +1,7 @@
 // import Menu from '../menu'
 import Link from 'next/link'
 // import { withAuth } from '../with-auth'
-import styles from './styles.module.css'
+import styles from './header.module.css'
 
 /**
  *
@@ -13,29 +13,18 @@ import styles from './styles.module.css'
 export default function Header({ number, handleSetNumber }) {
   return (
     <div className={styles.header}>
-      <div>
-        <ul className='list-disc px-5 list-inside'>
-          <li>
-            <Link href='/'>Home</Link>
-          </li>
-          <li>
-            <Link href='/profile'>Profile</Link>
-          </li>
-          <li>
-            <Link href='/users'>Users</Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* <div>
-        <button onClick={handleSetNumber}>Button Number</button>
-        <p>Component Header {number}</p>
-      </div> */}
-      {/* <div>
-        <Menu />
-      </div> */}
+      <ul className='flex gap-2'>
+        <li>
+          <Link href='/'>Home</Link>
+        </li>
+        <li>
+          <Link href='/profile'>Profile</Link>
+        </li>
+        <li>
+          <Link href='/users'>Users</Link>
+        </li>
+      </ul>
     </div>
   )
 }
-
 // export default withAuth(Header) <-- Jika ingin menggunakan logic !isLogin comment -->
